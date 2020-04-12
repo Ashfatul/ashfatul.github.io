@@ -1,339 +1,430 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-    <title>Ashfatul islam</title>
+    <title>Ashfatul's Portfolio Site</title>
+    <!--Online css-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
+    <!--End-->
     <style>
-        .main{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    background: white;
-    
-}
+        body{
+    padding-left: 5%;
+    padding-right: 5%;
+    background-image: url(https://i.ibb.co/KL1jKz2/bg.jpg);
 
-.main-p{
-    height: 100%;
+    background-attachment: fixed;
+}
+#ai{
     width: 100%;
+    height: auto;
     border-radius: 50%;
 }
-.name{
-    font-size: 50px;
-    margin-top: 75px;
+#a{
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
-.tagline{
-    font-size: 25px;
+#b, #c, #d, #e, #f{
+    min-height: 100vh;
+    width: 100%;
+    background: white;
 }
-.social{
-    width: 10%;
+.icon{
+    width: 20%;
 }
-.pl{
+.social-icon{
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-top: 10px;
+}
+
+
+.title-design{
+    height: 20vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 5vh;
+    border-top-right-radius: 5vh
+}
+
+#inp{
+    width: 100%;
+    height: 10vh;
+    padding-left: 20px;
+}
+#msg{
+    width: 100%;
+    padding-left: 20px;
+    
+}
+.required{
+    color: red;
+}
+#s{
     margin-left: 20px;
 }
-.menu{
-    padding-left: 45%;
-    
+#r{
+    margin-left: 50px;
 }
-.menu a i{
+footer{
+    height: 50vh;
+    background-color: brown;
+}
+#a{
+    background: #333333;
     color: white;
-    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
 }
-.menu a i:hover{
-    color: #17a2b8;
-    
+#b{
+    border-left: 3px solid #dc3545;
+    border-right: 3px solid #dc3545;
+    border-bottom: 3px solid #dc3545;
+    border-top-left-radius: 5vh;
+    border-top-right-radius: 5vh;
+    border-bottom-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    background: lightgreen;
 }
-
-.rotate{
-    transform: rotate(270deg);
-    font-size: 40px;
-    text-align: center;
-    animation: text-clr 1s;
-    animation-iteration-count: infinite;
+#c{
+    border-left: 3px solid #17a2b8;
+    border-right: 3px solid #17a2b8;
+    border-bottom: 3px solid #17a2b8;
+    border-top-left-radius: 5vh;
+    border-top-right-radius: 5vh;
+    border-bottom-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    background: white;
 }
-.se{
-    min-height: 300px;
-    
+#d{
+    border-left: 3px solid #007bff;
+    border-right: 3px solid #007bff;
+    border-bottom: 3px solid #007bff;
+    border-top-left-radius: 5vh;
+    border-top-right-radius: 5vh;
+    border-bottom-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    background: white;
 }
-.a-1{
-    padding-top: 100px;
+#e{
+    border-left: 3px solid #28a745;
+    border-right: 3px solid #28a745;
+    border-bottom: 3px solid #28a745;
+    border-top-left-radius: 5vh;
+    border-top-right-radius: 5vh;
+    border-bottom-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    background: lightslategray;
 }
-.bo1{
-    border: 2px solid #17a2b8;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    
-}
-.bo2{
-    border: 2px solid #28a745;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-.bo3{
-    border: 2px solid #dc3545;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-.bo4{
-    border: 2px solid #007bff;
-    padding-top: 120px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-.r1,.r2{
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.footer{
-    background: black;
-    color: white;
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-.menu{
-    background: #1e1e1e;
-    color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    
+#f{
+    border-left: 3px solid #ffc107;
+    border-right: 3px solid #ffc107;
+    border-bottom: 3px solid #ffc107;
+    border-top-left-radius: 5vh;
+    border-top-right-radius: 5vh;
+    border-bottom-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    background: lightskyblue;
 }
 .title{
-    background: #1e1e1e;
-    border-radius: 20px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    padding-top: 6vh;
+    font-family: monospace;
+    animation-name: title-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
-.name,.tagline{
+@keyframes title-animation{
+    25%{color: black}
+    50%{color: gray}
+    75%{color: white}
+    100%{color: gray}
+
+}
+
+.loader{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader img{
+    width: auto;
+}
+.loader.hidden{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut{
+    100%{opacity: 0;visibility: hidden}
+}
+#a,#b,#c,#d,#e,#f{
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 20px;
+}
+.progress{
+    height: 30px;
+}
+.t{
+    font-size: 18px;
+}
+h5{
+    font-size: 1.5em;
+    font-family: monospace;
+}
+#h1{
+    font-size: 4em;
+    font-family: monospace;
+}
+footer{
+    padding-top: 25vh;
+    background: #1e1e1e;
+    color:white;
+}
+.edu,.year,.website{
+    padding-left: 20px;
+}
+#p-img{
+    width: 80%;
+}
+.pp{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%
+}
+.hh:hover{
+    background: lightgray;
+}
+.ins{
+    font-family: monospace;
     color: white;
 }
-img{
-    padding-top: 20px;
+.dis{
+    text-align: justify;
 }
-html{
-    scroll-behavior: smooth;
+.int{
+    text-align: justify;
 }
-.pb{
-    animation: progressbar 5s ease-in-out; 
-    animation-iteration-count: 2;
-    
+.bg{
+    background: lightblue;
 }
-
-@keyframes progressbar{
-    0%{width:0%}
-    
-}
-@keyframes text-clr{
-    0%{color: white}
-    50%{color: black}
-    100%{color: white}
-}
-
     </style>
-<link rel="me" href="https://www.blogger.com/profile/17912440702289943857" />
 </head>
 <body>
-    <div class="main">
-       
-            <div class="row title ">
-                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5"><img class="main-p" src="https://i.ibb.co/gRLwn97/ai.jpg" alt="this is a image"></div>
-                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 col-xl-7">
-                    <p class="name">Ashfatul islam</p>
-                    <p class="tagline">Studing Diploma In Civil Engineering</p>
-                   <div class="row social-icon">
-                        <div class="social pl">
-                            <a href="http://facebook.com/ashfatul" class="text-primary">
-                                <i class="fab fa-facebook fa-2x"></i>
-                            </a>
-                        </div>
-                        <div class="social">
-                            <a href="http://m.me/ashfatul" class="text-success">
-                                <i class="fab fa-facebook-messenger fa-2x"></i>
-                            </a>
-                        </div>
-                        <div class="social">
-                            <a href="http://twitter.com/ashfatul" class="text-info">
-                                <i class="fab fa-twitter fa-2x"></i>
-                            </a>
-                        </div>
-                        <div class="social">
-                            <a href="http://instagram.com/ashfatul" class="text-warning">
-                                <i class="fab fa-instagram fa-2x"></i>
-                            </a>
-                        </div>
-                        <div class="social">
-                            <a href="mailto:ashfatul.islam@gmail.com?subject=This mail was sent from resume site" class="text-danger">
-                                <i class="fas fa-envelope fa-2x"></i>
-                            </a>
-                        </div>
-                   </div>
-                </div>
-            </div>
-        
-        <div class="menu row">
-            <a href="#Intro">
-                <i class="fas fa-user-circle p-2">Intro</i>
-            </a>
-            <a href="#Education">
-                <i class="fas fa-university p-2">Education</i>
-            </a>
-            <a href="#Skills">
-                <i class="fas fa-pencil-alt p-2">Skills</i>
-            </a>
-            <a href="#Exp">
-                <i class="fas fa-check-circle p-2">Experience</i>
-            </a>
+        <marquee behavior="" direction="" class="bg-danger text-warning p-3">This Site is Under Construction</marquee>
+        <div class="loader"><img src="https://i.ibb.co/KsNFw09/loader.gif" alt="Loading..."></div>
+    <div id="a" class="row">
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
+            <img src="https://i.ibb.co/x7sDLsW/ai.png" alt="This is a photo of Ashfatul" id="ai">
         </div>
-        <!--section-->
-        <div class="row se a-1 hover1"id="Intro ">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 bg-info">
-                <br><br><br>
-                <p class="rotate" >Intro</p>
+        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12">
+            <h5>Hi there, This is</h5>
+            <h1 id="h1">Ashfatul islam</h1>
+            <h5>Studing Diploma In Civil Engineering</h5>
+            <div class="row social-icon">
+                <div class="icon"><a href="http://fb.me/ashfatul"><i class="fab fa-facebook fa-2x text-primary"></i></a></div>
+                <div class="icon"><a href="http://m.me/ashfatul"><i class="fab fa-facebook-messenger fa-2x text-success"></i></a></div>
+                <div class="icon"><a href="http://twitter.com/ashfatul"><i class="fab fa-twitter fa-2x text-info"></i></a></div>
+                <div class="icon"><a href="mailto:ashfatul.islam@gmail.com?subject=This mail is beging send from portfolio site"><i class="fas fa-envelope fa-2x text-danger"></i></a></div>
+                <div class="icon"><a href="tel:015178041220"><i class="fas fa-phone fa-2x text-"></i></a></div>
             </div>
-            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-xs-9 bo1">
-                <br>
-                Hi there! <br>
-                This is Ashfatul islam. I am a student at Bogura polytechnic institute,Bogura doing diploma in civil engineering . I passes SSC in 2018 from school . I like to play online video games,offline games. i have several skills like i can work with MS word,Excel,PowerPoint etc. I can use both computer and mobile . this is my resume site where you can find a lot of thing about me. 
-            </div>
-        </div>
-        <!--end of section-->
-        <br>
-        <!--section-->
-        <div class="row se hover2" id="Education">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 bg-success">
-                <br><br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                
-                <p class="rotate" >Education</p>
-            </div>
-            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-xs-9 bo2">
-                <div class="row r1">
-                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5 table-bordered">
-                        <h3 class='text-success'><i class="fas fa-university p-2"></i>Bogura polytechnic institute</h3>
-                        <p class="class">
-                            Diploma In Civil Engineering <br>
-                            From 2018 to 2022 <br>
-                            http://bograpoly.gov.bd
-                        </p>
-
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-5"></div>
-                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5 table-bordered">
-                        <h3 class='text-success'><i class="fas fa-university p-2"></i>Bogura Pouro High School</h3>
-                        <p class="class">
-                            Classes 07 to 10 <br>
-                            From 2014 to 2018 <br>
-                            http://phsb.gov.bd
-                        </p>
-                    </div>
-                </div>
-                <br>
-                <div class="row r2">
-                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5 table-bordered">
-                        <h3 class='text-success'><i class="fas fa-university p-2"></i>Shabgram Kudrotiya High School</h3>
-                        <p class="class">
-                            Class 06 <br>
-                            From 2013 to 2014 <br>
-                            http://website.com
-                        </p>
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-5"></div>
-                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5 table-bordered">
-                        <h3 class='text-success'><i class="fas fa-university p-2"></i>Professor KG School</h3>
-                        <p class="class">
-                            Classes 01 to 05 <br>
-                            From 2008 to 2012 <br>
-                            http://website.gov.bd
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--end of section-->
-        <br>
-        <!--section-->
-        <div class="row se hover3" id="Skills">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 bg-danger">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                
-                <p class="rotate">Skills</p>
-            </div>
-            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-xs-9 bo3">
-                <br>
-                <div class="row pba">
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                        Computer <br><br>
-                        Mobile Phone <br><br>
-                        MS Office Word <br><br>
-                        MS Office Excel <br><br>
-                        MS Office PowerPoint <br><br>
-                        AutoCAD <br><br>
-                        Internet <br><br>
-                        English <br><br>
-                        Bangla <br><br>
-                    </div>
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                        <div class="progress-bar bg-danger pb" style="width:70%">70%</div><br>
-                        <div class="progress-bar bg-danger pb" style="width:80%">80%</div><br>
-                        <div class="progress-bar bg-danger pb" style="width:75%">75%</div><br>
-                        <div class="progress-bar bg-danger pb" style="width:60%">60%</div><br>
-                        <div class="progress-bar bg-danger pb" style="width:75%">75%</div><br>
-                        <div class="progress-bar bg-danger pb" style="width:50%">50%</div><br>
-                        <div class="progress-bar bg-danger pb" style="width:70%">70%</div><br>
-                        <div class="progress-bar bg-danger pb" style="width:90%">90%</div><br>
-                        <div class="progress-bar bg-danger pb" style="width:95%">95%</div><br>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--end of section-->
-        <br>
-        <!--section-->
-        <div class="row se hover4" id="Exp">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 bg-primary">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <p class="rotate">Experience</p>
-            </div>
-            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-xs-9 bo4 text-center">
-                <h1>No ExperienceYet! :(</h1>
-            </div>
-        </div>
-        <!--end of section-->
-        <br>
-        <div class="text-center footer row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    This site was Design and Developed by Ashfatul islam <br>
-                    All right reserved 2020
-            </div>
-            
-            
         </div>
     </div>
-</body>
+    <br>
+    <div id="b" class="row ">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-danger  title-design">
+                <h1 class="text-center title"><i class="far fa-address-card"></i> Intro</h1>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-">
+                <p class="int">
+                    Hi there <br>
+                    This is Ashfatul islam. Diploma in civil engineering student.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.
+                </p>
+            </div>
+    </div>
+<br>
+    <div id="c" class="row ">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-info   title-design">
+                    <h1 class="text-center title">
+                            <i class="fas fa-university"></i> Education
+                    </h1>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <!----> <br>
+
+                        <div class="table-bordered bg">
+                            <h3 class="text-center p-2 bg-success ins"><i class="fas fa-university"></i> Bogura polytechnic institute</h3>
+                            <p class="edu">Course: Diploma In Civil Engineering</p> <br>
+                            <p class="year">Since 2018 to Present</p> <br>
+                            <p class="website"><a href="">http://bograpoly.gov.bd</a></p>
+                        </div><br>
+                        <!---->
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <!----> <br>
+                            <div class="table-bordered bg">
+                                    <h3 class="text-center p-2 bg-success ins"><i class="fas fa-university"></i> Bogura polytechnic institute</h3>
+                                    <p class="edu">Course: Diploma In Civil Engineering</p> <br>
+                                    <p class="year">Since 2018 to Present</p> <br>
+                                    <p class="website"><a href="">http://bograpoly.gov.bd</a></p>
+                                </div><br>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                               <!---->
+                               <div class="table-bordered bg">
+                                    <h3 class="text-center p-2 bg-success ins"><i class="fas fa-university"></i> Bogura polytechnic institute</h3>
+                                    <p class="edu">Course: Diploma In Civil Engineering</p> <br>
+                                    <p class="year">Since 2018 to Present</p> <br>
+                                    <p class="website"><a href="">http://bograpoly.gov.bd</a></p>
+                                </div><br>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <!---->
+                                    <div class="table-bordered bg">
+                                            <h3 class="text-center p-2 bg-success ins"><i class="fas fa-university"></i> Bogura polytechnic institute</h3>
+                                            <p class="edu">Course: Diploma In Civil Engineering</p> <br>
+                                            <p class="year">Since 2018 to Present</p> <br>
+                                            <p class="website"><a href="">http://bograpoly.gov.bd</a></p>
+                                        </div><br>
+                            </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <br>
+        
+        
+        
+        
+        
+        <div id="d" class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12   title-design bg-primary">
+                <h1 class="title text-center">
+                        <i class="fas fa-list"></i> Skills
+                </h1>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                <div class="">
+                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">AutoCAD</p></div><div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 progress"><div class="progress-bar bg-primary progress-bar-animated progress-bar-striped" style="width:70%">70%</div></div></div>
+
+                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">MS Office</p></div><div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-success progress-bar-animated progress-bar-striped " style="width:80%">80%</div></div></div>
+
+                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">Computer</p></div><div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-warning progress-bar-animated progress-bar-striped " style="width:60%">60%</div></div></div>
+
+                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">Mobile</p></div><div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-info progress-bar-animated progress-bar-striped " style="width:90%">90%</div></div></div>
+
+                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">Internet</p></div><div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-primary progress-bar-animated progress-bar-striped " style="width:90%">90%</div></div></div>
+
+                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">English</p></div><div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-warning progress-bar-animated progress-bar-striped " style="width:70%">70%</div></div></div>
+
+                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">STADD</p></div><div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-success progress-bar-animated progress-bar-striped " style="width:10%">10%</div></div></div>
+
+                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">Gaming</p></div><div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-danger progress-bar-animated progress-bar-striped " style="width:80%">80%</div></div></div>
+
+                </div>
+            </div>
+        </div> <br>
+        <div id="e" class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-success  title-design">
+                <h1 class="text-center title ">
+                        <i class="fas fa-address-book"></i> Projects
+                </h1>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                <br>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="text-center table-bordered p-3 hh">
+                            <img src="https://i.ibb.co/6Rsjg24/project.jpg" alt="project image" id="p-img"><br>
+                            <p class="dis">This is a Project which i have done in 2020.This is Project Discription where you can learn about this Project . To read more about this projet hit the "Detail" Button</p>
+                            <a href="" class="btn btn-info pp">Detail</a> <br><br>
+                        </div> <br>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="text-center table-bordered p-3 hh">
+                                    <img src="https://i.ibb.co/6Rsjg24/project.jpg" alt="project image" id="p-img"><br>
+                                    <p class="dis">This is a Project which i have done in 2020.This is Project Discription where you can learn about this Project . To read more about this projet hit the "Detail" Button</p>
+                                    <a href="" class="btn btn-info pp">Detail</a> <br><br>
+                                </div> <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="text-center table-bordered p-3 hh">
+                                    <img src="https://i.ibb.co/6Rsjg24/project.jpg" alt="project image" id="p-img"><br>
+                                    <p class="dis">This is a Project which i have done in 2020.This is Project Discription where you can learn about this Project . To read more about this projet hit the "Detail" Button</p>
+                                    <a href="" class="btn btn-info pp">Detail</a> <br><br>
+                                </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="text-center table-bordered p-3 hh">
+                                    <img src="https://i.ibb.co/6Rsjg24/project.jpg" alt="project image" id="p-img"><br>
+                                    <p class="dis">This is a Project which i have done in 2020.This is Project Discription where you can learn about this Project . To read more about this projet hit the "Detail" Button</p>
+                                    <a href="" class="btn btn-info pp">Detail</a> <br><br>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="f" class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12  title-design text-center bg-warning">
+                <h1 class="title"><i class="fas fa-address-book"></i> Contact</h1>
+            </div>
+    
+            <br>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                <form action="" method="post" class="" id="email_form">
+                    Name <i class="required">*Required</i><input type="text" placeholder="Your name?" id="inp" required id="first_name"><br>
+                     Email <i class="required">*Required</i><input type="email" placeholder="Your email address?" id="inp" required id="email"> <br><br>
+                     Message <i class="required">*Required</i>
+                     <textarea name="" id="msg" cols="40" rows="5" placeholder="Your Message..." id="email_message" required></textarea>
+                     <br><br>
+                     <input type="checkbox" name="" id="" required> I am not robot <br><br>
+                     <div class="row text-right">
+                         <input type="reset" class="btn btn-info" value="Reset" id="r">
+                         <input type="submit" class="btn btn-success" value="Submit" id="s">
+                     </div>
+                </form>
+            </div>
+        </div>
+    <br>
+        <footer>
+            <div class="text-center">
+                Design and Developed by Ashfatul Islam <br>
+                All right reserved 2020
+            </div>
+        </footer>
+    
+    
+    
+    
+    
+    
+        <script>
+                window.addEventListener("load", function (){
+                const loader = document.querySelector(".loader");
+                loader.className += " hidden";
+                } );
+            </script>
+    </body>
 </html>
