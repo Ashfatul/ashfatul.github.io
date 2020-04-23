@@ -10,6 +10,7 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
     <!--End-->
     <style>
         body{
@@ -42,6 +43,7 @@
     padding-left: 5%;
     padding-right: 10%;
     padding-top: 10px;
+
 }
 
 
@@ -78,9 +80,8 @@ footer{
     background-color: brown;
 }
 #a{
-    background: #333333;
+    background: white;
     color: white;
-    margin-top: 20px;
     border-radius: 10px;
     border: 1px solid white;
 }
@@ -122,7 +123,7 @@ footer{
     border-top-right-radius: 5vh;
     border-bottom-left-radius: 2vh;
     border-bottom-right-radius: 2vh;
-    background: lightslategray;
+    background: lightyellow;
 }
 #f{
     border-left: 3px solid #ffc107;
@@ -133,6 +134,7 @@ footer{
     border-bottom-left-radius: 2vh;
     border-bottom-right-radius: 2vh;
     background: lightskyblue;
+
 }
 .title{
     padding-top: 6vh;
@@ -178,6 +180,8 @@ footer{
 }
 .progress{
     height: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .t{
     font-size: 18px;
@@ -185,18 +189,31 @@ footer{
 h5{
     font-size: 1.5em;
     font-family: monospace;
+    color: green;
 }
 #h1{
     font-size: 4em;
     font-family: monospace;
+    color: red;
 }
 footer{
     padding-top: 25vh;
     background: #1e1e1e;
     color:white;
+    margin-bottom: 100px;
 }
 .edu,.year,.website{
     padding-left: 20px;
+    margin-bottom: 0px;
+}
+.edu{
+    color: red;
+}
+.year{
+    color: blue;
+}
+.website{
+
 }
 #p-img{
     width: 80%;
@@ -207,7 +224,7 @@ footer{
     width: 80%
 }
 .hh:hover{
-    background: lightgray;
+    background: white;
 }
 .ins{
     font-family: monospace;
@@ -222,10 +239,7 @@ footer{
 .bg{
     background: lightblue;
 }
-.menu a{
- Width:20%;
-Text-align:center;
-}
+
 .menu a i{
     color: white;
     font-size: 20px;
@@ -234,6 +248,7 @@ Text-align:center;
     color: #17a2b8;
     
 }
+
 .menu{
     padding-left: 5%;
     padding-right: 5%;
@@ -241,10 +256,18 @@ Text-align:center;
 html{
     scroll-behavior: smooth;
 }
+.m-l{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#a{
+    padding-left: 0px;
+    padding-right: 0px;
+}
     </style>
 </head>
 <body>
-        <marquee behavior="" direction="" class="bg-danger text-warning p-3">This Site is Under Construction</marquee>
+        
         <div class="loader"><img src="https://i.ibb.co/KsNFw09/loader.gif" alt="Loading..."></div>
     <div id="a" class="row">
         <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
@@ -259,64 +282,63 @@ html{
                 <div class="icon"><a href="http://m.me/ashfatul"><i class="fab fa-facebook-messenger fa-2x text-success"></i></a></div>
                 <div class="icon"><a href="http://twitter.com/ashfatul"><i class="fab fa-twitter fa-2x text-info"></i></a></div>
                 <div class="icon"><a href="mailto:ashfatul.islam@gmail.com?subject=This mail is beging send from portfolio site"><i class="fas fa-envelope fa-2x text-danger"></i></a></div>
-                <div class="icon"><a href="tel:015178041220"><i class="fas fa-phone fa-2x text-"></i></a></div>
+                <div class="icon"><a href="tel:01517804920"><i class="fas fa-phone fa-2x text-"></i></a></div>
             </div>
         </div>
     </div>
-    <br>
     <!--menu here-->
-<div class="menu row navbar fixed-bottom bg-dark d-none d-sm-block text-center">
+<div class="menu row navbar fixed-bottom bg-dark d-none d-sm-block" data-aos="flip-up">
     <a href="#b">
-        <i class="fas fa-user-circle p-2" >Intro </i>
+        <i class="fas fa-user-circle p-2" style="width:18%;text-align:center"> Intro</i>
     </a>
     <a href="#c">
-        <i class="fas fa-university p-2"> Education</i>
+        <i class="fas fa-university p-2" style="width:18%;text-align:center"> Education</i>
     </a>
     <a href="#d">
-        <i class="fas fa-pencil-alt p-2"> Skills</i>
+        <i class="fas fa-pencil-alt p-2" style="width:18%;text-align:center"> Skills</i>
     </a>
     <a href="#e">
-        <i class="fas fa-check-circle p-2"> Projects</i>
+        <i class="fas fa-check-circle p-2" style="width:18%;text-align:center"> Projects</i>
     </a>
     <a href="#f">
-        <i class="fas fa-address-book"> Contact</i>
+        <i class="fas fa-address-book p-2" style="width:18%;text-align:center"> Contact</i>
     </a>
 </div>
 
-<div class="menu row navbar fixed-bottom bg-dark d-block d-md-none text-center">
+
+<div class="menu row navbar fixed-bottom bg-dark d-block d-md-none text-center" data-aos="flip-up">
     <a href="#b">
-        <i class="fas fa-user-circle p-2"></i>
+        <i class="fas fa-user-circle p-2" style="width:18%;text-align:center;font-size:25px;"></i>
     </a>
     <a href="#c">
-        <i class="fas fa-university p-2"></i>
+        <i class="fas fa-university p-2" style="width:18%;text-align:center;font-size:25px;"></i>
     </a>
     <a href="#d">
-        <i class="fas fa-pencil-alt p-2"></i>
+        <i class="fas fa-pencil-alt p-2" style="width:18%;text-align:center;font-size:25px;"></i>
     </a>
     <a href="#e">
-        <i class="fas fa-check-circle p-2"></i>
+        <i class="fas fa-check-circle p-2" style="width:18%;text-align:center;font-size:25px;"></i>
     </a>
     <a href="#f">
-        <i class="fas fa-address-book"></i>
+        <i class="fas fa-address-book p-2" style="width:18%;text-align:center;font-size:25px;"></i>
     </a>
 </div>
-
 <!--end-->
 <br>
-    <div id="b" class="row ">
+    <div id="b" class="row " data-aos="fade">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-danger  title-design">
                 <h1 class="text-center title"><i class="far fa-address-card"></i> Intro</h1>
             </div>
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-">
                 <p class="int">
                     Hi there <br>
-                    This is Ashfatul islam. Diploma in civil engineering student.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.Thanks for visiting my portfolio site.
+                    This is Ashfatul islam and this is my Personal Portfolio website. To create this site i used html, css and bootstrap. background image is downloaded from website. All the coading has been done by my self. If you found any bug on this website just let me know. many featute of this website still doesn't work. This is a fully responsive website. If you have any suggestion just let me know. I don't have much to tell about this website. I upload this site to github page just to make it visible online. <br><br> Thanks for visiting <br> <b>Note: INTRO WILL CHANGE BY TIME</b>
                 </p>
             </div>
     </div>
 <br>
 
-    <div id="c" class="row ">
+    <div id="c" class="row " data-aos="fade">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-info   title-design">
                     <h1 class="text-center title">
                             <i class="fas fa-university"></i> Education
@@ -375,34 +397,34 @@ html{
         
         
         
-        <div id="d" class="row">
+        <div id="d" class="row" data-aos="fade">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12   title-design bg-primary">
                 <h1 class="title text-center">
                         <i class="fas fa-list"></i> Skills
                 </h1>
             </div>
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 m-l">
                 <div class="">
-                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">AutoCAD</p></div><div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 progress"><div class="progress-bar bg-primary progress-bar-animated progress-bar-striped" style="width:70%">70%</div></div></div>
+                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">AutoCAD</p></div><div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12 progress"><div class="progress-bar bg-primary progress-bar-animated progress-bar-striped" style="width:70%">70%</div></div></div>
 
-                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">MS Office</p></div><div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-success progress-bar-animated progress-bar-striped " style="width:80%">80%</div></div></div>
+                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">MS Office</p></div><div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-success progress-bar-animated progress-bar-striped " style="width:80%">80%</div></div></div>
 
-                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">Computer</p></div><div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-warning progress-bar-animated progress-bar-striped " style="width:60%">60%</div></div></div>
+                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">Computer</p></div><div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-warning progress-bar-animated progress-bar-striped " style="width:60%">60%</div></div></div>
 
-                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">Mobile</p></div><div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-info progress-bar-animated progress-bar-striped " style="width:90%">90%</div></div></div>
+                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">Mobile</p></div><div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-info progress-bar-animated progress-bar-striped " style="width:90%">90%</div></div></div>
 
-                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">Internet</p></div><div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-primary progress-bar-animated progress-bar-striped " style="width:90%">90%</div></div></div>
+                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">Internet</p></div><div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-primary progress-bar-animated progress-bar-striped " style="width:90%">90%</div></div></div>
 
-                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">English</p></div><div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-warning progress-bar-animated progress-bar-striped " style="width:70%">70%</div></div></div>
+                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">English</p></div><div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-warning progress-bar-animated progress-bar-striped " style="width:70%">70%</div></div></div>
 
-                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">STADD</p></div><div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-success progress-bar-animated progress-bar-striped " style="width:10%">10%</div></div></div>
+                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">STADD</p></div><div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-success progress-bar-animated progress-bar-striped " style="width:30%">30%</div></div></div>
 
-                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">Gaming</p></div><div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-danger progress-bar-animated progress-bar-striped " style="width:80%">80%</div></div></div>
+                    <div class="row"><div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center p-2"><p class="t">Gaming</p></div><div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12 progress"><div class="progress progress-bar bg-danger progress-bar-animated progress-bar-striped " style="width:80%">80%</div></div></div>
 
                 </div>
             </div>
         </div> <br>
-        <div id="e" class="row">
+        <div id="e" class="row" data-aos="fade">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-success  title-design">
                 <h1 class="text-center title ">
                         <i class="fas fa-address-book"></i> Projects
@@ -445,7 +467,7 @@ html{
             </div>
         </div>
         <br>
-        <div id="f" class="row">
+        <div id="f" class="row" data-aos="fade">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12  title-design text-center bg-warning">
                 <h1 class="title"><i class="fas fa-address-book"></i> Contact</h1>
             </div>
@@ -467,7 +489,7 @@ html{
             </div>
         </div>
     <br>
-        <footer>
+        <footer data-aos="zoom-in">
             <div class="text-center">
                 Design and Developed by Ashfatul Islam <br>
                 All right reserved 2020
@@ -484,6 +506,15 @@ html{
                 const loader = document.querySelector(".loader");
                 loader.className += " hidden";
                 } );
-            </script>
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init(
+              {
+                  offset:300,
+                  duration:1500
+              }
+          );
+        </script>
     </body>
 </html>
