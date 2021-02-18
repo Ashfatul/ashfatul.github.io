@@ -1,0 +1,19 @@
+#ad{
+    text-align: center;
+}
+.table{
+    width: 100%;
+    overflow-x: scroll;
+}
+marquee{
+    display: table-footer-group;
+}
+ul{
+    list-style: none;
+}
+#category{
+    padding-left: 0px;
+}
+#category li ul{
+    padding-left: 0px;
+}
