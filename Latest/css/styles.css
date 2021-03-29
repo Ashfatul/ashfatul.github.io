@@ -6700,7 +6700,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-    background-image: linear-gradient(135deg, rgb(168, 113, 185), green, orange);
+    background-image: linear-gradient(135deg, green, red);
 }
 
 a.bg-primary:hover,
