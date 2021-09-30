@@ -8,12 +8,26 @@ body{
 .main-container{
     min-height: 100vh;
 }
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+}
 #my-photo{
     width: 70%;
     height: auto;
     border-radius: 50%;
     border: 10px solid #fff;
 }
-.name, .designation{
+.name, .designation, .description{
     color: #fff;
+}
+.social-container{
+    position: absolute;
+    z-index: 1;
+    left: 0;
 }
