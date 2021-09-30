@@ -2,9 +2,6 @@
     margin: 0px;
     padding: 0px;
 }
-body{
-    /* body css */
-}
 .main-container{
     min-height: 100vh;
 }
@@ -30,4 +27,11 @@ body{
     position: absolute;
     z-index: 1;
     left: 0;
+}
+.social-container ul li{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 50%;
 }
