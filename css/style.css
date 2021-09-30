@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /* body css */
+}
+.main-container{
+    min-height: 100vh;
+}
+#my-photo{
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+    border: 10px solid #fff;
+}
+.name, .designation{
+    color: #fff;
+}
