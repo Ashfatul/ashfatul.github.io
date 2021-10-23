@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Russo+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.impression{
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 0px;
+    background-image: url(img/top-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    /* filter: blur(2px); */
+}
+.nav-custom{
+    z-index: 1;
+    box-shadow: 0px 1px 5px #38519e;
+}
+@media (min-width:991px) {
+    .nav-custom{
+        height: 80px;
+    }
+}
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: 'Courgette', cursive;
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    color: #38519e!important;
+    transform: scale(.9);
+}
+.navbar-brand:hover{
+    transform: scale(1);
+    transition: .5s;
+}
+.navbar-brand:not(:hover){
+    transform: scale(.9);
+    transition: .5s;
+}
+.name-ending{
+    color: gray;
+}
+.nav-menu ul li{
+    padding-left: 5px;
+}
+.nav-menu ul li a {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px;
+}
+.nav-menu ul li a:hover{
+    color: #38519e!important;
+    transform: rotateX(360deg);
+    transition: 1s;
+}
+.social-container{
+    height: 80px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: #3851a9;
+}
+.impression-container{
+    padding-top: 5%;
+}
