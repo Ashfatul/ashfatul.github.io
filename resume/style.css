@@ -66,3 +66,6 @@
 .impression-container{
     padding-top: 5%;
 }
+.intro-info-container{
+    min-height: 380px;
+}
