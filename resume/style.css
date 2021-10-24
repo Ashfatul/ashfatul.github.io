@@ -112,7 +112,7 @@ a#down-arrow {
     text-align: center;
     margin: 8% 0;
     position: absolute;
-    left: 50%;
+    left: calc(50% - 25px);
     bottom: 0px;
     margin-bottom: 20px;
   }
