@@ -78,12 +78,12 @@
     text-align: center;
     box-shadow: 2px 0px 10px #3851a9;
 }
-h1 {
-    font-size: 5em;
+h1#desig {
+    font-size: 3em;
     text-transform: uppercase;
   }
   
-  span {
+  span#caret {
     border-right: .05em solid;
     animation: caret 1s steps(1) infinite;
   }
