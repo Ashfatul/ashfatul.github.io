@@ -7,7 +7,7 @@
     min-height: 100vh;
     max-width: 100%;
     margin: 0px;
-    background-image: url(img/top-bg.jpg);
+    background-image: url(img/top-bg.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -76,7 +76,7 @@
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
-    box-shadow: 2px 0px 10px #3851a9;
+/*    box-shadow: 2px 0px 10px #3851a9;*/
 }
 h1#desig {
     font-size: 5em;
@@ -138,3 +138,7 @@ a#down-arrow {
     }
   }
   
+h1#desig {
+    text-shadow: 0px 9px 7px #38519e;
+    color: #fff;
+}
