@@ -71,11 +71,14 @@
     min-height: 380px;
 }
 .impression-box{
-    padding-top: 10%;
+    /* padding-top: 10%;
     padding-bottom: 10%;
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 5%; */
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 /*    box-shadow: 2px 0px 10px #3851a9;*/
 }
 h1#desig {
