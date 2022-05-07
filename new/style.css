@@ -20,6 +20,7 @@
     --ai-odd-section-bg: #f0f8ff;
     --ai-star-rating: #e2c20a;
     --ai-color-danger: #ff0000;
+    --ai-dark-danger: #800a0a;
 }
 body{
     font-family: VarelaRound-Regular;
@@ -437,7 +438,7 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
     padding: 20px 0px;
     margin-bottom: 20px;
     position: relative;
-    background: linear-gradient(-45deg, var(--ai-highlight-color) 50%, transparent 50%);
+    background: linear-gradient(-45deg, var(--ai-highlight-color) 50%, var(--ai-sub-primary) 50%);
     background-size: 300%;
     background-position: left;
 }
@@ -562,7 +563,7 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
     min-height: auto;
 }
 .contact-image{
-    background-image: url(res/img/skills-sidebar.webp);
+    background-image: url(res/img/contact-sidebar.webp);
     background-position: top, center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -588,4 +589,54 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
     padding: 10px 15px;
     border: none;
     color: var(--ai-sub-primary);
+}
+.submit-button input:hover{
+    background: var(--ai-primary-color);
+    transition: all 1s;
+}
+.submit-button input:not(:hover){
+    transition: all 1s;
+}
+.reset-button input:hover{
+    background: var(--ai-dark-danger);
+    transition: all 1s;
+}
+.reset-button input:not(:hover){
+    transition: all 1s;
+}
+.footer-section{
+    padding-top: 3%;
+    background: var(--ai-primary-color);
+    color: var(--ai-sub-primary);
+    text-align: center;
+    padding-bottom: 0px;
+}
+.logo-footer{
+    margin-bottom: 10px;
+    background: var(--ai-transparent);
+}
+.important-links ul{
+    padding-left: 0px
+}
+.important-links ul li{
+    list-style: none;
+    padding: 5px;
+}
+.important-links ul li a{
+    color: var(--ai-sub-primary);
+    text-decoration: none;
+}
+.copyright {
+    background: var(--ai-highlight-color);
+    padding: 20px 0px;
+}
+.footer-section .col-md-4{
+    padding: 3rem;
+}
+.important-links p, .social-title{
+    color: var(--ai-highlight-color);
+    padding: 10px;
+}
+.footer-section .col-md-4 .social{
+    margin-top: 0px;
 }
