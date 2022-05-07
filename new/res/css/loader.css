@@ -1,0 +1,14 @@
+.loader-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 9999;
+    position: fixed;
+    background: #fff;
+}
+.loading-wait-text{
+    font-size: 2rem;
+}
