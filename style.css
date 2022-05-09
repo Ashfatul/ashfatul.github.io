@@ -771,8 +771,61 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
     display: flex;
     justify-content: space-between;
 }
-
-
+.home-container{
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+.home-container::before{
+    content: '';
+    height: 550px;
+    width: 550px;
+    background: var(--ai-highlight-dark-color);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    left: 150px;
+    opacity: 0.02;
+    animation-name: object-1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.home-container::after{
+    content: '';
+    height: 500px;
+    width: 500px;
+    background: var(--ai-highlight-sub-color);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    right: 150px;
+    opacity: 0.02;
+    animation-name: object-2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes object-1 {
+    25%{
+        left: 200px;
+    }
+    50%{
+        left: 220px;
+    }
+    75%{
+        left: 180px;
+    }
+}
+@keyframes object-2 {
+    25%{
+        right: 200px;
+    }
+    50%{
+        right: 220px;
+    }
+    75%{
+        right: 180px;
+    }
+}
 
 
 
