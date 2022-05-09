@@ -86,6 +86,7 @@ body{
 }
 .cta-btns{
     margin-bottom: 20px;
+    min-width: 200px;
 }
 .cta-btns a{
     color: var(--ai-sub-primary);
@@ -236,7 +237,7 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
     transform: translatex(-50%);
 }
 .social, .on-about{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .social a{
     padding: 7px 10px;
@@ -463,9 +464,7 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
     margin-bottom: 10px;
 }
 .service-details p{
-   max-height: 5rem;
     min-height: 5rem;
-    height: 5rem;
 }
 .single-service::before{
     content: '';
@@ -770,4 +769,27 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
 .sm-logo{
     display: flex;
     justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive css */
+@media(max-width: 767px){
+    .name{
+        margin-top: 20px;
+    }
 }
