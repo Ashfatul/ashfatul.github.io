@@ -770,6 +770,7 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
 .sm-logo{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .home-container{
     z-index: 1;
