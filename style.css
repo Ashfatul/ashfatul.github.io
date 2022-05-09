@@ -732,7 +732,7 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
     align-items: center;
     background: var(--ai-primary-color);
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     width: 100%;
   }
   .top-bar .content .logo{
@@ -847,7 +847,7 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
         margin-top: 20px;
     }
     .content-container{
-        margin-top: 65px;
+        margin-top: 50px;
     }
     .home-container .content h1{
         font-size: 3.5rem;
