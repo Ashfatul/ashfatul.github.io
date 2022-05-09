@@ -619,6 +619,7 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
     background: var(--ai-primary-color);
     color: var(--ai-sub-primary);
     padding-bottom: 0px;
+    padding: 0px 3%;
 }
 .logo-footer{
     margin-bottom: 10px;
