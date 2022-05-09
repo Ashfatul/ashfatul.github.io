@@ -372,7 +372,6 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
       margin-bottom: 20px;
   }
   .single-post-item .cover-image-container .cover-image{
-      background-image: url(res/img/skills-sidebar.webp);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: top, center;
@@ -417,6 +416,7 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
     margin-bottom: 10px;
     font-size: 0.9rem;
     max-height: 2.6rem;
+    min-height: 2.6rem;
     overflow: hidden;
 }
 .read-more-btn{
