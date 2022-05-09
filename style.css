@@ -86,7 +86,7 @@ body{
 }
 .cta-btns{
     margin-bottom: 20px;
-    min-width: 200px;
+    min-width: 150px;
 }
 .cta-btns a{
     color: var(--ai-sub-primary);
@@ -792,5 +792,21 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
 @media(max-width: 767px){
     .name{
         margin-top: 20px;
+    }
+    .content-container{
+        margin-top: 65px;
+    }
+    .home-container .content h1{
+        font-size: 3.5rem;
+    }
+    .hire-me-section div p{
+        font-size: 1.1rem;
+    }
+    .hire-me-section div {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hire-me-section div .cta-btns{
+        justify-content: end;
     }
 }
