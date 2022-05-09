@@ -759,7 +759,7 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
 }
 .show-on-top{
     display: block!important;
-    z-index: 1;
+    z-index: 99;
 }
 #menu-closer{
     background: var(--ai-primary-color);
