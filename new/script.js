@@ -42,3 +42,33 @@ responsive:{
     }
 }
 });
+
+// Back to top
+var btn = $('#back-to-top-button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+// Activating Animation on scroll
+AOS.init();
+
+// Menu
+$('#menu-toggler').click(function(){
+    $('#sidebar').addClass('show-on-top');
+});
+$('#menu-closer').click(function(){
+    $('#sidebar').removeClass('show-on-top');
+});
+$('#sidebar-menu-main a').click(function(){
+    $('#sidebar').removeClass('show-on-top');
+});
