@@ -24,6 +24,7 @@
     --ai-star-rating: #e2c20a;
     --ai-color-danger: #ff0000;
     --ai-dark-danger: #800a0a;
+    --ai-sidebar-border: #ccc;
 }
 body{
     font-family: VarelaRound-Regular;
@@ -38,6 +39,7 @@ body{
     height: 100vh;
     background: var(--ai-primary-color);
     position: fixed;
+    border-right: 1px solid var(--ai-sidebar-border);
 }
 .logo{
     font-size: 30px;
@@ -178,10 +180,10 @@ body{
     justify-content: center;
     margin-top: 35px;
 }
-.skills-section, .portfolio-section, .testimonial-section{
+.skills-section, .testimonial-section, .services-section{
     background: var(--ai-even-section-bg);
 }
-.about-section, .resume-section, .services-section, .contact-section, .svg-art{
+.about-section, .resume-section, .contact-section, .svg-art{
     background: var(--ai-odd-section-bg);
 }
 .photo-main{
@@ -447,7 +449,7 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
     border-radius: 10px;
     overflow: hidden;
     height: fit-content;
-    padding: 20px 0px;
+    padding: 40px 0px;
     margin-bottom: 20px;
     position: relative;
     background: linear-gradient(-45deg, var(--ai-highlight-color) 50%, var(--ai-sub-primary) 50%);
@@ -456,7 +458,7 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
 }
 .service-icon{
     color: var(--ai-highlight-color);
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .service-title{
     font-size: 1.5rem;
@@ -464,7 +466,10 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
     margin-bottom: 10px;
 }
 .service-details p{
-    min-height: 5rem;
+    min-height: 2.85rem;
+    max-height: 2.85rem;
+    overflow: hidden;
+    margin-bottom: 0px;
 }
 .single-service::before{
     content: '';
