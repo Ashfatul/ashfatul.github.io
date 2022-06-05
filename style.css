@@ -557,8 +557,6 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
     
 }
 .single-testimonial-item{
-    background: var(--ai-sub-primary);
-    border: 1px solid var(--ai-shadow-color);
     padding: 10px
 }
 .owl-nav{
@@ -576,6 +574,10 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
 }
 .testimonial-section.section{
     min-height: auto;
+    background:  linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(/res/img/testimonial-bg.webp);
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .contact-image{
     background-image: url(res/img/contact-sidebar.webp);
