@@ -527,33 +527,45 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
 .hire-me-section div .cta-btns a{
     padding: 12px 30px;
 }
-.client-image img{
+.testimonial-section .summary {
+    color: var(--ai-sub-secondary);
+}
+.client-image{
     border: 3px solid var(--ai-shadow-color);
+    width:50%!important;
+    max-width: 200px;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 .client-name{
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: var(--ai-highlight-color);
+    color: var(--ai-sub-secondary);
 }
 .client-designation{
-    text-decoration: italic;
-    letter-spacing: 2px;
-    border-bottom: 1px solid var(--ai-submenu-border);
-    font-size: 0.9rem;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+    color: var(--ai-sub-secondary);
 }
 .client-rating{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 5px
+    max-width: 200px;
+    margin: 5px auto;
 }
 .client-rating i{
     color: var(--ai-star-rating);
 }
 .client-feedback p{
-    max-height: 4.7rem;
+    max-height: 7.5rem;
+    min-height: 7.5rem;
     overflow: hidden;
     margin-bottom: 0px;
     padding-top: 5px;
+    max-width: 700px;
+    margin: auto;
+    color: #fff;
     
 }
 .single-testimonial-item{
