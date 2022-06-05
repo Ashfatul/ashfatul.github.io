@@ -297,7 +297,7 @@ a.list-group-item.list-group-item-action:not(:hover), a.list-group-item.list-gro
 .skills-sidebar {
     background-image: url(res/img/skill-sidebar-image.webp);
     background-size: cover;
-    background-position: top,center;
+    background-position: left,center;
     background-repeat: no-repeat;
     border-radius: 10px;
 }  
