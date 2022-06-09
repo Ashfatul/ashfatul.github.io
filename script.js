@@ -73,3 +73,20 @@ $('#menu-closer').click(function(){
 $('#sidebar-menu-main a').click(function(){
     $('#sidebar').removeClass('show-on-top');
 });
+
+// Warning
+$('.agree-btn').click(function(){
+    $('.page-warning').hide();
+    $('.job-attempt-content').show();
+});
+// Job Attempt
+// $('.job-attempt-table tr').each(function() {
+//     var test_status = $(this).find(".written-test").html();
+//     if (test_status = 'Passed') {
+//         $('.written-test').each(function(){
+//             $('.written-test').addClass('test-passed');
+//         });
+//     } else {
+//         $('.written-test').addClass('test-failed');
+//     }
+//  });
