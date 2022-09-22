@@ -6,3 +6,50 @@
 /* ========================================= */
 /* ========================================= */
 
+
+:root{
+    /* Background */
+    --ai-bg-primary: #081721;
+    --bi-bg-secondary: #0c2231;
+
+    /* Color */
+    --ai-c-primary: #081721;
+    --ai-c-secondary: #fff;
+    --ai-c-hover-primary: #2db77e;
+}
+@font-face {
+    font-family: brand-font;
+    src: url(res/fonts/OleoScriptSwashCaps-Regular.ttf);
+}
+.menu{
+    float: right;
+    justify-content: flex-end;
+    width: 100%;
+    background: var(--ai-bg-primary);
+}
+nav.navbar.menu {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+a.nav-link {
+    padding-left: 1rem!important;
+    padding-right: 1rem!important;
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+    color: var(--ai-c-secondary);
+}
+a.nav-link:hover {
+    color: var(--ai-c-hover-primary);
+    text-underline-offset: 10px;
+}
+.navbar-brand{
+    color: var(--ai-c-secondary);
+    font-family: brand-font;
+    font-size: 2rem;
+}
+.navbar-brand:hover{
+    color: var(--ai-c-hover-primary);
+}
+.menu-icon{
+    color: var(--ai-c-secondary);
+}
