@@ -45,3 +45,11 @@ a.nav-link:hover {
 .menu-icon{
     color: var(--ai-c-secondary);
 }
+.active{
+    color: var(--ai-c-hover-primary)!important;
+}
+@media (max-width: 576px){
+.px-xs-2 {
+    padding-right: 0.75rem!important;
+    padding-left: 0.75rem!important;
+}}
