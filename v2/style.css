@@ -7,49 +7,106 @@
 /* ========================================= */
 
 
-:root{
+:root {
     /* Background */
     --ai-bg-primary: #081721;
-    --bi-bg-secondary: #0c2231;
+    --ai-bg-secondary: #11344b;
 
     /* Color */
     --ai-c-primary: #081721;
     --ai-c-secondary: #fff;
+    --ai-c-highlight: #2db77e;
     --ai-c-hover-primary: #2db77e;
 }
+
 @font-face {
     font-family: brand-font;
     src: url(res/fonts/OleoScriptSwashCaps-Regular.ttf);
 }
-.menu{
+
+body {
+    color: var(--ai-c-secondary);
+}
+
+.menu {
     float: right;
     justify-content: flex-end;
     width: 100%;
     background: var(--ai-bg-primary);
 }
+
 a.nav-link {
     color: var(--ai-c-secondary);
 }
+
 a.nav-link:hover {
     color: var(--ai-c-hover-primary);
     text-underline-offset: 10px;
 }
-.navbar-brand{
+
+.navbar-brand {
     color: var(--ai-c-secondary);
     font-family: brand-font;
     font-size: 2rem;
 }
-.navbar-brand:hover{
+
+.navbar-brand:hover {
     color: var(--ai-c-hover-primary);
 }
-.menu-icon{
+
+.menu-icon {
     color: var(--ai-c-secondary);
 }
-.active{
-    color: var(--ai-c-hover-primary)!important;
+
+.active {
+    color: var(--ai-c-hover-primary) !important;
 }
-@media (max-width: 576px){
-.px-xs-2 {
-    padding-right: 0.75rem!important;
-    padding-left: 0.75rem!important;
-}}
+
+#intro {
+    background: var(--ai-bg-primary);
+    background-image: url(res/img/intro-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#intro .row {
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 74px);
+}
+
+h1.intro-name {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+h1.intro-name .name {
+    color: var(--ai-c-highlight);
+}
+
+span.cursor {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+}
+.intro-photo{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid var(--ai-bg-secondary);
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+/* Media query */
+@media (max-width: 576px) {
+    .px-xs-2 {
+        padding-right: 0.75rem !important;
+        padding-left: 0.75rem !important;
+    }
+}
