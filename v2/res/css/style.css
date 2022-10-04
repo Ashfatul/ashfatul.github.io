@@ -39,6 +39,11 @@ body {
     text-transform: capitalize;
     background-attachment: fixed;
 }
+nav.navbar {
+    position: fixed;
+    z-index: 1;
+    border-bottom: 1px solid var(--ai-bg-secondary);
+}
 
 .menu {
     float: right;
