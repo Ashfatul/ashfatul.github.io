@@ -20,6 +20,7 @@
     --ai-c-secondary: #fff;
     --ai-c-highlight: #2db77e;
     --ai-c-hover-primary: #2db77e;
+    --ai-c-additional: #ff7600;
 }
 
 @font-face {
@@ -41,7 +42,7 @@ body {
 }
 nav.navbar {
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     border-bottom: 1px solid var(--ai-bg-secondary);
     top: 0;
 }
@@ -220,6 +221,49 @@ span.cursor {
 .footer ul li:hover a{
     color: var(--ai-c-secondary);
 }
+.position{
+    color: var(--ai-c-highlight);
+    font-size: 22px;
+}
+.experience-item, .education-item{
+    position: relative;
+    padding-left: 30px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.experience-item::before, .education-item::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    background: var(--ai-c-additional);
+    position: absolute;
+    border-radius: 50%;
+    top: calc(50% - 10px);
+    left: 0px;
+    z-index: 1;
+    border: 2px solid var(--ai-c-secondary);
+}
+.experience-item::after, .education-item::after{
+    content: '';
+    height: 100%;
+    width: 2px;
+    background: var(--ai-c-highlight);
+    position: absolute;
+    top: 0px;
+    left: 9px;
+}
+.sub-sub-title{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--ai-c-secondary);
+}
+.experience-item:last-child, .education-item:last-child{
+    margin-bottom: 40px;
+}
+
+
+
+
 /* Media query */
 @media (max-width: 1200px) {
     .skills-container {
