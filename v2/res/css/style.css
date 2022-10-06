@@ -35,7 +35,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 75px);
     text-transform: capitalize;
     background-attachment: fixed;
 }
@@ -43,6 +43,7 @@ nav.navbar {
     position: fixed;
     z-index: 1;
     border-bottom: 1px solid var(--ai-bg-secondary);
+    top: 0;
 }
 
 .menu {
@@ -81,11 +82,13 @@ a.nav-link:hover {
 .spacer{
     padding-bottom: 2rem;
 }
-
+#intro{
+    margin-top: 75px;
+}
 #intro .row {
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 74px);
+    min-height: calc(100vh - 75px);
 }
 
 h1.intro-name {
@@ -151,7 +154,7 @@ span.cursor {
 .highlight-text{
     color: var(--ai-c-highlight);
 }
-.about-about{
+.section-core{
     background: var(--ai-bg-page-container);
     padding: 20px;
     border-radius: 5px;
