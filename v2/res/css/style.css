@@ -138,7 +138,7 @@ span.cursor {
     text-transform: uppercase;
     letter-spacing: 5px;
     padding-top: 8rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }
 .user-photo{
     width: 100%;
@@ -260,9 +260,42 @@ span.cursor {
 .experience-item:last-child, .education-item:last-child{
     margin-bottom: 40px;
 }
-
-
-
+.project-image{
+    background-image: url(../img/placeholder.jpg);
+    height: 150px;
+    width: 100%;
+    background-position: center, center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project-item p.project-title{
+    margin-top: 1rem;
+    color: var(--ai-c-secondary);
+    font-size: 22px;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.project-item {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--ai-bg-transparent);
+}
+.project-item:hover {
+    background: var(--ai-bg-secondary);
+    transition: all 500ms;
+    border: 1px solid;
+}
+.project-item:not(:hover) {
+    transition: all 500ms;
+}
+.project-item:hover p.project-title {
+    color: var(--ai-c-hover-primary);
+}
 
 /* Media query */
 @media (max-width: 1200px) {
