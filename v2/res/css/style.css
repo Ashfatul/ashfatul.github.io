@@ -296,6 +296,65 @@ span.cursor {
 .project-item:hover p.project-title {
     color: var(--ai-c-hover-primary);
 }
+.contact-social{
+    list-style: none;
+    padding: 0px;
+}
+.contact-type-title{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    color: var(--ai-c-highlight);
+}
+.contact-social li{
+    padding: 10px 0px;
+}
+.contact-social li a{
+    text-decoration: none;
+    color: var(--ai-c-secondary);
+    text-transform: lowercase;
+}
+.contact-social li a:hover{
+    color: var(--ai-c-hover-primary);
+}
+.contact-form{
+    font-size: 1.2rem;
+}
+.contact-form input{
+    border: 1px solid var(--ai-bg-transparent);
+}
+.contact-form input:hover{
+    border: 1px solid var(--ai-c-hover-primary);
+}
+.contact-form input[type=text], .contact-form input[type=email], .contact-form input[type=tel], .contact-form textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.contact-form input:focus, .contact-form input:active, .contact-form input:focus-visible{
+    border: 1px solid var(--ai-c-additional);
+}
+.action-btns input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px var(--ai-c-secondary);
+    transition: 500ms;
+}
+.action-btns input[type=reset]{
+    background: var(--ai-c-additional);
+    color: var(--ai-c-secondary);
+}
+.action-btns input[type=reset]:hover{
+    background: var(--ai-bg-secondary);
+}
+.action-btns input[type=submit]{
+    background: var(--ai-c-highlight);
+    color: var(--ai-c-secondary);
+}
+.action-btns input[type=submit]:hover{
+    background: var(--ai-bg-secondary);
+}
 
 /* Media query */
 @media (max-width: 1200px) {
