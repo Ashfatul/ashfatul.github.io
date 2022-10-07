@@ -319,11 +319,11 @@ span.cursor {
 .contact-form{
     font-size: 1.2rem;
 }
-.contact-form input{
-    border: 1px solid var(--ai-bg-transparent);
+.contact-form input, .contact-form textarea{
+    border: 2px solid var(--ai-bg-primary);
 }
-.contact-form input:hover{
-    border: 1px solid var(--ai-c-hover-primary);
+.contact-form input:hover, .contact-form textarea:hover{
+    border: 2px solid var(--ai-c-hover-primary);
 }
 .contact-form input[type=text], .contact-form input[type=email], .contact-form input[type=tel], .contact-form textarea {
     width: 100%;
@@ -331,8 +331,11 @@ span.cursor {
     padding: 10px;
     margin-bottom: 10px;
 }
-.contact-form input:focus, .contact-form input:active, .contact-form input:focus-visible{
-    border: 1px solid var(--ai-c-additional);
+.contact-form input:focus, .contact-form input:active, .contact-form input:focus-visible, .contact-form textarea:focus, .contact-form textarea:active, .contact-form textarea:focus-visible{
+    border: 2px solid var(--ai-c-additional);
+}
+.contact-form input:focus-visible, .contact-form textarea{
+    outline: none;
 }
 .action-btns input{
     width: 100%;
