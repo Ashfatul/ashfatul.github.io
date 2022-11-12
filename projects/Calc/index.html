@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculetor Basic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Very Basic Calculator app using HTML, CSS, and a bit of JQuery :)</h1>
+    <div class="calc-container">
+        <div class="calculetor-display">
+            <p class="calc-display"></p>
+        </div>
+        <div class="calc-btns">
+            <table>
+                <tr>                    
+                    <td id="clear-entry" colspan="2">CE</td>
+                    <td id="clear-all">C</td>
+                    <td class="value">/</td>
+                </tr>
+                <tr>
+                    <td class="value">7</td>
+                    <td class="value">8</td>
+                    <td class="value">9</td>
+                    <td class="value">*</td>
+                </tr>
+                <tr>
+                    <td class="value">4</td>
+                    <td class="value">5</td>
+                    <td class="value">6</td>
+                    <td class="value">-</td>
+                </tr>
+                <tr>
+                    <td class="value">1</td>
+                    <td class="value">2</td>
+                    <td class="value">3</td>
+                    <td class="value">+</td>
+                </tr>
+                <tr>
+                    <td class="value">.</td>
+                    <td class="value">0</td>
+                    <td colspan="2" id="result">=</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
