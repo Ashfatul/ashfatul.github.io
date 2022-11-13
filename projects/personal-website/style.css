@@ -104,7 +104,7 @@ body{
     max-width: 100%;
 }
 .clients {
-    margin: 50px 0px;
+    padding: 50px 0px;
 }
 .clients-testimony-container{
     display: flex;
