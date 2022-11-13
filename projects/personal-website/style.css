@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.section{
+    padding: 0px 10%;
+}
+.section-1{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(res/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-2{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(res/biography-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-3{
+    background-image: url(res/latest-work-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+.section-4{
+    background-image: url(res/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-1 div{
+    width: 50%;
+}
+.section-2 div{
+    width: 50%;
+}
+#user-photo1{
+    width: 90%;
+}
+.hero-img{
+    text-align: center;
+}
+.user-name{
+    color: #EC4B79;
+    font-weight: 600;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.hello{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.bio {
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+}
+.hire-me {
+    text-transform: uppercase;
+    padding: 10px 30px;
+    background: linear-gradient(45deg, #EC5094, #ED4B70);
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+.cv-download{
+    padding: 10px 30px;
+    background: linear-gradient(45deg, #EC5094, #ED4B70);
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+.title{
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+.center{
+    text-align: center;
+}
+.latest-work{
+    padding: 50px 0px;
+}
+.work-container{
+    display: grid;
+    grid-template-columns: repeat(3,33.33333%);
+}
+.work-item{
+    padding: 20px;
+}
+.work-item img{
+    max-width: 100%;
+}
+.clients {
+    margin: 50px 0px;
+}
+.clients-testimony-container{
+    display: flex;
+    justify-content: center;
+}
+.client-name{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.client-designation{
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 30px;
+    color: gray;
+}
+.client-testimony{
+    line-height: 30px;
+}
+.single-client-testimony{
+    width: 50%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contact-us{
+    width: 40%;
+    background-color: #EC4F92;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    margin: auto;
+}
+.contact-us .email{
+    font-size: 18px;
+}
+.ins{
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+footer{
+    text-align: center;
+    padding: 30px;
+    color: gray;
+}
