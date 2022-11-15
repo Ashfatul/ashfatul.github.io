@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main, .section.carousel, .section.categories, .section.product, .section.contact-us{
+    padding: 0px 10%;
+}
+.carousel-item, .contact-area{
+    background: #FEE9E9;
+}
+.price{
+    color: #EC4086;
+    font-weight: bold;
+}
+.buy-now-btn, .send-mail-btn{
+    background: #EC4086;
+    color: #fff;
+}
+.section{
+    margin-top: 100px;
+}
+.categories-cont{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+}
+.categories-cont .ci{
+    width: auto;
+    margin-bottom: 20px;
+}
+.category-item1{
+    background: linear-gradient(90deg, #F1962F, #F7CC1D);
+}
+.category-item2{
+    background: linear-gradient(90deg, #ED3F83, #EC3079);
+}
+.category-item3{
+    background: linear-gradient(90deg, #4379FF, #3712F6);
+}
+.c-name{
+    font-size: 35px;
+    color: #fff ;
+}
+.c-img img{
+    width: 120px;
+}
+.card{
+    background: #fff;
+    box-shadow: 0px 0px 40px lightgray;
+    border: none;
+    margin-bottom: 20px;
+}
+.section.product{
+    background: #F8F8F8;
+}
+.con-title{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 25px;
+}
+.info{
+    font-size: 12px;
+}
+.email-field{
+    height: 44px;
+    padding: 10px;
+    width: 50%;
+    border: none;
+}
+.send-mail-btn{
+    border: none;
+    height: 44px;
+}
+.contact-area{
+    padding: 70px;
+}
+@media (max-width: 991px) {
+    .categories-cont{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 575px) {
+    .categories-cont{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
