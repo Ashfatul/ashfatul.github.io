@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+.first-section{
+    background: #F0FFF0;
+    width: 100%;
+}
+.section{
+    padding: 0px 10%;
+}
+.sign-in-btn, .cta-btn{
+    background: #21B573;
+    color: #fff;
+    border-radius: 33px;
+}
+.sign-in-btn:hover, .cta-btn:hover, .buy-course:hover{
+    color: #fff;
+    background: #117e4e;
+}
+.ready-q{
+    color: #FD511A;
+}
+.learn{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+.learn span{
+    color: #21B573;
+}
+.des{
+    line-height: 36px;
+    color: #6C6B6B;
+}
+.box{
+    padding: 35px;
+    background: #fff;
+    border-radius: 10px;
+    height: 255px;
+}
+.box:hover{
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+}
+.highlight-topic{
+    font-weight: 500;
+    font-size: 24px;
+    color:#413960;
+}
+.sub-text{
+    color: #585859;
+}
+.online-course-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: #413960;
+}
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    border: none;
+    transition: 500ms all ease;
+    margin-bottom: 10px;
+}
+.card:hover{
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+}
+.card-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #413960;
+}
+.designation{
+    font-weight: 400;
+}
+.card-btn a{
+    background: #21B573;
+    border-radius: 33px;
+    color: #fff;
+}
+.client-img{
+    width: 120px;
+    height: 120px;
+}
+.review{
+    line-height: 30px;
+}
+.footer-section{
+    background: #282531;
+    color: #FFFFFF;
+}
+.info{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+.footer-section ul li{
+    list-style: none;
+    padding: 5px 0px;
+}
+.footer-section ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-section ul li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+.link-title{
+    font-size: 18px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+footer p{
+    color: #CDCDCD;
+}
