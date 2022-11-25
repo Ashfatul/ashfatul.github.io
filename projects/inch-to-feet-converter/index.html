@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inch to Feet Converter</title>
+    <style>
+        .container{
+            margin: 50px auto;
+            width: fit-content;
+            text-align: center;
+        }
+        input[type="number"] {
+            height: 40px;
+            font-size: 20px;
+            padding: 5px;
+        }
+        button{
+            height: 54px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Convert Inch to Feet!</h1>
+        <h4>Simply add inch value to the input field</h4>
+        <input type="number" id="inch">
+        <button type="submit" value="Submit" id="submitbtn" onclick="convert(document.getElementById('inch').value)">Convert</button>
+        <h1 id="output"></h1>
+    </div>
+    <script>
+        function convert(inch){
+            var input = document.getElementById("inch").value;
+            var feetVal = inch/12;
+            var feetOutput = feetVal.toFixed(2);
+            var outputOnlyFeet = feetOutput.toString().split(".")[0];
+            var outputOnlyInch = feetOutput.toString().split(".")[1] / 100 * 12;
+            var singelDigitInch = outputOnlyInch.toFixed(0);
+            console.log(outputOnlyFeet);
+            document.getElementById('output').innerHTML = input + " inch is equals to " + feetOutput + " feet" +" ( " + outputOnlyFeet + "'-" + singelDigitInch + '"' + " )";
+        }
+    </script>
+</body>
+</html>
