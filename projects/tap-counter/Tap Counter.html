@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tap/Click Counter</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: rgb(0, 39, 39);
+            color: #fff;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+        .tap-area{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        #count{
+            font-size: 10rem;
+        }
+        .ins{
+            position: absolute;
+            bottom: 50px;
+            color: #80808061;
+        }
+    </style>
+</head>
+<body>
+    <div class="tap-area" onclick="countClicks()">
+        <div id="count">
+            #
+        </div>
+        <div class="ins">
+            Click anywhare on the screen to count Clicks / Taps.
+        </div>
+    </div>
+    <script>
+        let i = 0;
+        function countClicks(){
+            i++;
+            document.getElementById("count").innerHTML = i;
+        }
+    </script>
+</body>
+</html>
