@@ -84,7 +84,7 @@
         font-size: 18px;
         margin: 10px 0px;
         color: darkcyan;
-        background: linear-gradient(45deg, #adebeb73 60%, #63abe947);
+        background: linear-gradient(45deg, #adebeb73 60%, #a6e5b347);
         padding: 5px 5px;
         border-radius: 5px;
       }
@@ -157,7 +157,9 @@
       .sign .section-content {
         width: 70mm;
       }
-
+      .sign-area {
+        min-height: 20mm;
+      }
       @media print {
         .training {
           page-break-before: always;
@@ -577,7 +579,15 @@
           <div class="section-title">Signature:</div>
           <div class="section-content">
             <div class="signature">
-              <img class="signature-img" src="signature.png" alt="sign" />
+              <div class="sign-area">
+                <!-- For security reasons no digital signature was added ... when required add image file and place the src link below -->
+                <img
+                  class="signature-img"
+                  src=""
+                  onerror="this.style.display = 'none' "
+                  alt="sign"
+                />
+              </div>
               <div class="signature-of">A. A. M Ashfatul Islam</div>
             </div>
           </div>
