@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather information</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background: url(images/bg-image.jpg) no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+      .unit-selector-container {
+        text-align: center;
+        padding-top: 50px;
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- unit selector -->
+      <div class="unit-selector-container">
+        <span>Select Weather Unit</span>
+        <select
+          name="weather-unit"
+          id="weather-unit-select"
+          onchange="getUnit()"
+        >
+          <option value="metric">Celsius</option>
+          <option value="imperial">Fahrenheit</option>
+        </select>
+      </div>
+      <form class="col-md-6 m-auto py-2">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter a location for Weather ..."
+            id="weather-of-city"
+            value="Bogra"
+          />
+          <div class="input-group-append">
+            <button
+              type="button"
+              class="btn btn-danger"
+              onclick="getWeatherData()"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="weather-status text-white text-center">
+        <img src="" id="weather-icon" alt="" />
+        <h1 id="city-name-display"></h1>
+        <h3><span id="temperature"></span><span id="unit-symbol"></span></h3>
+        <h1 class="lead" id="weather-type"></h1>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
