@@ -1,131 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="refresh" content="0;url=https://ashfatul-islam.web.app/" />
-      <title>Ashfatul ~ Portfolio / Resume</title>
-      <link rel="stylesheet" href="res/css/loader.css" />
-      <link rel="stylesheet" href="res/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="res/css/fontawesome.all.min.css" />
-      <link rel="stylesheet" href="res/css/aos.css" />
-      <link rel="stylesheet" href="res/css/style.css" />
-   </head>
-   <body>
-      <!-- Bootstarp Nav bar -->
-      <nav
-         class="navbar menu navbar-expand-lg navbar-fixed-top px-lg-5 px-sm-3 px-xs-2"
-      >
-         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Ashfatul</a>
-            <button
-               class="navbar-toggler"
-               type="button"
-               data-bs-toggle="collapse"
-               data-bs-target="#mainmenu"
-               aria-controls="mainmenu"
-               aria-expanded="false"
-               aria-label="Toggle navigation"
-            >
-               <i class="fa-solid fa-bars menu-icon"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="mainmenu">
-               <ul class="navbar-nav menu me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                     <a
-                        class="nav-link p-lg-3 active"
-                        aria-current="page"
-                        href="/"
-                        ><i class="fa-solid fa-house-user"></i> Home</a
-                     >
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link p-lg-3" href="res/pages/about.html"
-                        ><i class="fa-solid fa-user-tie"></i> About</a
-                     >
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link p-lg-3" href="res/pages/resume.html"
-                        ><i class="fa-solid fa-timeline"></i> Resume</a
-                     >
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link p-lg-3" href="projects/"
-                        ><i class="fa-solid fa-list-check"></i> Projects</a
-                     >
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link p-lg-3" href="res/pages/contacts.html"
-                        ><i class="fa-regular fa-envelope"></i> Contact</a
-                     >
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <!-- Bootstarp Nav bar -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Ashfatul Islam ~ Launchpad & Portfolio Hub</title>
+  <meta name="description" content="Welcome to the personal digital hub for Ashfatul Islam. Explore full portfolio, resume, GitHub, LinkedIn, and direct contact options." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="res/img/favicon.png" />
 
-      <!-- Intro Section -->
-      <section id="intro">
-         <div class="container">
-            <div class="row">
-               <div
-                  class="col-md-4 col-sm-12 text-center d-block d-md-none pt-5"
-               >
-                  <img
-                     src="res/img/ashfatul.jpg"
-                     alt="Photo of Ashfatul"
-                     class="intro-photo"
-                  />
-               </div>
-               <div class="col-md-8 col-sm-12 text-md-start text-center">
-                  <div class="spacer"></div>
-                  <h3>Hello there!</h3>
-                  <h1 class="intro-name">
-                     I'M <span class="name">Ashfatul Islam</span>
-                  </h1>
-                  <h2 class="type-writer">Diploma Engineer (Civil)</h2>
-                  <p class="summery">
-                     I am a creative, artistic and ambitious Engineer with a
-                     talent for thinking outside the box and coming up with
-                     innovative ideas and problem solving. I graduated with a
-                     1st Class degree in Civil Engineering (Diploma) from Bogura
-                     polytechnic institute.
-                  </p>
-                  <a
-                     class="btn cv-download mt-5 px-4"
-                     href="https://drive.google.com/file/d/15RQ9aV4a2sUZjRrefVloqHv6laa6aB7Y/view?usp=share_link"
-                     target="_blank"
-                     ><i class="fa-solid fa-cloud-arrow-down"></i> Download CV -
-                     Diploma Engineer Civil</a
-                  >
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-                  <a
-                     class="btn cv-download mt-5 px-4"
-                     href="https://drive.google.com/file/d/1xUieTWDpk-TPivbn8lrths-RgKV1Qxdz/view?usp=share_link"
-                     target="_blank"
-                     ><i class="fa-solid fa-cloud-arrow-down"></i> Download CV -
-                     Front-End Developer</a
-                  >
+  <!-- Dynamic Ambient Background Lights -->
+  <div class="bg-canvas">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+  </div>
 
-                  <div class="spacer"></div>
-               </div>
-               <div class="col-md-4 col-sm-12 text-center d-none d-md-block">
-                  <img
-                     src="res/img/ashfatul.jpg"
-                     alt="Photo of Ashfatul"
-                     class="intro-photo"
-                  />
-               </div>
-            </div>
-         </div>
+  <!-- App Viewport Container (100dvh Single Screen Lock) -->
+  <main class="app-container">
+    <div class="layout-wrapper">
+      
+      <!-- LEFT COLUMN: User Profile Info -->
+      <aside class="profile-column">
+        <!-- Status Badge -->
+        <div id="status-badge" class="status-badge" style="display: none;"></div>
+        
+        <!-- Profile Avatar -->
+        <div id="avatar-container" class="avatar-wrapper" style="display: none;"></div>
+        
+        <!-- User Info Typography -->
+        <h1 id="user-name" class="user-name"></h1>
+        <p id="user-title" class="user-title"></p>
+        <p id="user-bio" class="user-bio"></p>
+
+        <!-- Location Pill -->
+        <div id="location-pill" class="location-pill" style="display: none;"></div>
+      </aside>
+
+      <!-- RIGHT COLUMN: Action Links Hub -->
+      <section class="links-column">
+        <!-- Optional Auto Redirect Countdown -->
+        <div id="auto-redirect-container" style="display: none;"></div>
+
+        <!-- Primary Featured Destination (Main Portfolio Hero Card) -->
+        <div id="featured-container" style="display: none;"></div>
+
+        <!-- Secondary Action Link Cards -->
+        <nav id="action-cards-list" class="action-cards-list" aria-label="Quick links"></nav>
+
+        <!-- Footer -->
+        <footer id="hub-footer" class="hub-footer"></footer>
       </section>
-      <!-- Intro Section end -->
 
-      <script src="res/js/jquery.min.js"></script>
-      <script src="res/js/bootstrap.bundle.min.js"></script>
-      <script src="res/js/aso.js"></script>
-      <script src="res/js/script.js"></script>
-   </body>
+    </div>
+  </main>
+
+  <!-- Toast Notification Popup -->
+  <div id="toast" class="toast-msg" role="status" aria-live="polite"></div>
+
+  <!-- Configuration & Application Logic -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
 </html>
