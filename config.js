@@ -11,7 +11,7 @@ window.CONFIG = {
   name: "Ashfatul Islam",
   title: "Frontend-Focused Full Stack Developer",
   bio: "Building modern web experiences, applications, & digital products. Select a destination to explore my work.",
-  location: "Bangladesh",
+  location: "West Shewrapra, Mirpur, Dhaka, Bangladesh",
 
   // Profile Photo / Avatar Option
   // Set show: false or url: "" to hide the photo entirely
@@ -33,9 +33,8 @@ window.CONFIG = {
     enabled: true,
     badge: "MAIN PORTFOLIO",
     title: "Visit Full Interactive Portfolio",
-    description: "Explore my interactive showcase of web apps, case studies, & engineering projects.",
-    url: "https://ashfatul-islam.web.app/",
-    buttonText: "Launch Portfolio 🚀",
+    url: "https://ashfatul.netlify.app/",
+    buttonText: "Portfolio 🚀",
     icon: "globe"
   },
 
@@ -63,7 +62,7 @@ window.CONFIG = {
       enabled: true,
       title: "LinkedIn Profile",
       description: "@ashfatul • Connect professionally",
-      url: "https://linkedin.com/",
+      url: "https://www.linkedin.com/in/ashfatul/",
       icon: "linkedin",
     },
     {

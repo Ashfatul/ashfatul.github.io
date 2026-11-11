@@ -92,7 +92,6 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="featured-content">
           ${config.primaryFeatured.badge ? `<span class="featured-badge">${config.primaryFeatured.badge}</span>` : ""}
           <h2 class="featured-title">${config.primaryFeatured.title || 'Visit Portfolio'}</h2>
-          ${config.primaryFeatured.description ? `<p class="featured-desc">${config.primaryFeatured.description}</p>` : ""}
         </div>
         <div class="featured-cta">
           <span>${config.primaryFeatured.buttonText || 'Launch'}</span>

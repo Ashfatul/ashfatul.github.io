@@ -116,7 +116,7 @@ html, body {
   max-width: 1060px;
   max-height: calc(100dvh - 2rem);
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 0.8fr 1fr;
   gap: clamp(1.5rem, 3vw, 3rem);
   align-items: center;
   padding: 0.75rem 1rem;
@@ -562,8 +562,8 @@ html, body {
     text-align: center;
   }
   .avatar-wrapper {
-    width: 120px;
-    max-width: 120px;
+    width: 200px;
+    max-width: 200px;
     height: auto;
     aspect-ratio: 1 / 1;
   }
@@ -647,8 +647,8 @@ html, body {
     gap: 1rem;
   }
   .avatar-wrapper {
-    width: 100px;
-    max-width: 100px;
+    width: 200px;
+    max-width: 200px;
   }
   .user-name {
     font-size: 1.85rem;
